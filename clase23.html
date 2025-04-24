@@ -7,43 +7,17 @@
 </head>
 <body>
  
-<div id= "resultado1" ></div>
-<div id= "resultado2" ></div>
-<div id= "resultado3" ></div>
-<div id= "resultado4" ></div>
+<div id= "resultado" ></div>
+
 
 <script>
-function sumar()
+function sumar (valor1,valor2)
 {
-
-valor1=(prompt("Ingrese su nombre:"));
-valor2=parseInt(prompt("Ingrese su numero para x:"  ));
-valor3=parseInt(prompt("Ingrese su numero para y:"));
-valor4=parseInt(prompt("Ingrese su numero para z:"));
-
-var resultado= valor1;
-document.getElementById("resultado1").innerHTML="Su nombre es : " + resultado;
-
-
-var resultado= valor2+valor3+valor4;
-document.getElementById("resultado2").innerHTML="La funcion obtiene la siguiente suma es: " + resultado;
-
-
-var resultado= valor2*valor3*valor4;
-document.getElementById("resultado3").innerHTML="La funcion obtiene la siguiente multiplicacion es: " + resultado;
-
-
-
-var resultado= valor2-valor3-valor4;
-document.getElementById("resultado4").innerHTML="La funcion obtiene la siguiente resta es: " + resultado;
-
-
-
-
+var resultado=valor1+valor2;
+return resultado;
 
 }
-sumar();
-
+document.getElementById("resultado").innerHTML="Resultado de la suma es;"+sumar(30,50);
 </script>
 
 
