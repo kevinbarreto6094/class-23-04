@@ -11,14 +11,18 @@
 
 
 <script>
-function sumar(valor1,valor2)
+function sumar()
 {
-var resultado = valor1 + valor2;
+
+valor1=parseInt(prompt("Vamos a sumar 2 numeros. Ingrese el numero uno:  "));
+valor2=parseInt(prompt("Ingrese numero dos:"  ));
+
+var resultado= valor1+valor2;
 document.getElementById("resultado").innerHTML="La funcion obtiene la siguiente suma: " + resultado;
 
 }
 
-sumar(50,200);
+sumar();
 
 </script>
 
